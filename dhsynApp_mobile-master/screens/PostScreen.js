@@ -14,7 +14,7 @@ export default class PostScreen extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://178.128.60.189:8082/api/posts')
+      .get('https://my-json-server.typicode.com/Gnol-VN/demo/posts')
       .then((res) => {
         this.setState({
           posts: res.data,
